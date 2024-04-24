@@ -1,0 +1,19 @@
+.contenido-nosotros{
+    @include tablet{
+        @include grid(2, 2rem)
+    }
+}
+
+
+.texto-nosotros blockquote{
+    font-weight: $black;
+    font-size: 2.2rem;
+    margin: 3rem 0 0 0;
+    margin-bottom: 3rem;
+    padding-left: 1rem 0 3rem 0;
+}
+
+.imagen {
+    margin-bottom: 1rem; // Ajusta el margen inferior para agregar espacio debajo de la imagen
+    margin-right: 1rem; // Añade espacio a la derecha de la imagen
+}

@@ -1,0 +1,55 @@
+/* Establece el fondo de la sección 'inicio' cuando el formato de imagen no es webp */
+.no-webp .inicio {
+    background-image: url(../img/header.jpg);
+}
+
+/* Establece el fondo de la sección 'inicio' cuando el formato de imagen es webp */
+.webp .inicio {
+    background-image: url(../img/header.webp);
+}
+
+/* Estilos generales para la clase 'header' */
+.header {
+    /* Establece el color de fondo y relleno */
+    background-color: $grisOscuro;
+    padding: 1rem 0 3rem 0;
+
+    /* Estilos específicos para la clase 'inicio' dentro de 'header' */
+    &.inicio {
+        /* Posiciona la imagen de fondo en el centro y ajusta su tamaño */
+        background-position: center center;
+        background-size: cover;
+
+        /* Estilos adicionales para tablet, estableciendo una altura mínima */
+        @include tablet {
+            min-height: 70rem;
+        }
+
+        /* Estilos específicos para el contenido dentro de 'inicio' */
+        .contenido-header {
+            /* Estilos adicionales para tablet, estableciendo una altura mínima */
+            @include tablet {
+                min-height: 70rem;
+            }
+        }
+    }
+}
+
+/* Estilos para el contenido dentro de la clase 'contenido-header' */
+.contenido-header {
+    /* Establece el contenedor como flexible con dirección de columna y espacio entre elementos */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* Estilos para el elemento 'h1' dentro de 'contenido-header' */
+    h1 {
+        /* Alinea el texto a la izquierda y establece propiedades de fuente y color */
+        text-align: left;
+        color: $blanco;
+        font-weight: $bold;
+        line-height: 2;
+        /* Establece el ancho máximo del texto */
+        max-width: 60rem;
+    }
+}

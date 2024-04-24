@@ -1,0 +1,53 @@
+.formulario {
+    /* Estilo para los párrafos dentro del formulario */
+    p {
+        font-size: 1.4rem;
+        color: $grisOscuro;
+        margin: 2rem 0 0 0; /* Márgenes superior, derecho, inferior e izquierdo respectivamente */
+    }
+
+    /* Estilo para la leyenda (título) del formulario */
+    legend {
+        font-size: 2rem;
+        color: $grisOscuro;
+    }
+
+    /* Estilo para las etiquetas de los campos del formulario */
+    label {
+        font-weight: $bold;
+        text-transform: uppercase;
+        display: block; /* Hace que la etiqueta ocupe todo el ancho disponible */
+    }
+
+    /* Estilo para los campos de entrada de texto, textarea y select */
+    input:not([type="submit"]),
+    textarea,
+    select {
+        padding: 1rem;
+        display: block; /* Hace que los elementos ocupen todo el ancho disponible */
+        width: 100%;
+        background-color: $blanco;
+        border: 1px solid $gris;
+        border-radius: 1rem;
+        margin-bottom: 2rem; /* Margen inferior */
+    }
+
+    /* Ajuste de altura para el campo de textarea */
+    textarea {
+        height: 15rem;
+    }
+
+    /* Estilo para el contenedor .forma-contacto dentro del formulario */
+    .forma-contacto {
+        max-width: 30rem;
+        display: flex; /* Contenedor flexible */
+        justify-content: space-between; /* Distribuye el espacio entre los elementos secundarios */
+        align-items: center; /* Centra los elementos verticalmente */
+    }
+
+    /* Ajuste de estilo para los radio buttons */
+    input[type="radio"] {
+        margin: 0; /* Elimina el margen exterior */
+        width: auto; /* Ajusta el ancho automáticamente */
+    }
+}
